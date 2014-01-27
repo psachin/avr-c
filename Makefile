@@ -18,7 +18,7 @@ compile:
 	avr-objcopy -j .text -j .data -O ihex ${ARG} ${ARG}.hex
 
 burn:
-	avrdude -C /home/sachin/Downloads/arduino-1.0.1/hardware/tools/avrdude.conf -b 115200 -P /dev/ttyUSB0 -patmega328p -carduino -D -U flash:w:${ARG}.hex:i
+	avrdude -C avrdude.conf -b 115200 -P /dev/ttyUSB0 -patmega328p -carduino -D -U flash:w:${ARG}.hex:i
 
 clean:
 	-rm -rvf *.hex
