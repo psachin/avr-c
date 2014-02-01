@@ -24,3 +24,4 @@ clean:
 	-rm -rvf *.hex
 	-rm -rvf *.o *~
 	-rm -rvf ${ARG}
+	-find . -perm +100 -type f -delete
