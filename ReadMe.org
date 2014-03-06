@@ -1,5 +1,10 @@
 * ATMega328-PU in pure avr-C
 
+** Depends on
+   - gcc-avr
+   - avr-libc
+   - avrdude
+
 ** Usage
    - To compile
      #+BEGIN_SRC sh
